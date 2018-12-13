@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>History of ITB/Home</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+	<style>
+.mySlides {display:none;}
+</style>
+</head>
+
+<body>
+	<header>
+      <div class="container">
+        <div id="title">
+          <h1>History of ITB</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="location.html">Location</a></li>
+			<li><a href="ecology.html">Ecology</a></li>
+			<li><a href="buildings.html">Buildings</a></li>
+			<li><a href="about.html">About ITB</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+  <img class="mySlides" src="images/1999-2.jpeg" style="width:100%">
+  <img class="mySlides" src="images/2014.jpg" style="width:100%">
+  <img class="mySlides" src="images/campus.jpg" style="width:100%">
+
+  <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+    <section id="undercontainer">
+    </section>
+
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+			<a href="history.html"><img src="images/ITBlogo.jpg"></a>
+          <h3>History</h3>
+          <p>Learn about the history of ITB</p>
+        </div>
+        <div class="box">
+			<a href="location.html"><img src="images/1999-1.jpeg"></a>
+          <h3>Location</h3>
+          <p>Learn about the local area of ITB</p>
+        </div>
+        <div class="box">
+			<a href="ecology.html"><img src="images/outside-2.jpg"></a>
+          <h3>Ecology</h3>
+          <p>Learn about the ecology of ITB</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+		<a href="https://www.facebook.com/itbdublin/"><img src="images/facebook.png" alt="facebook"></a>
+		<a href="https://twitter.com/ITBdublin"><img src="images/twitter.png" alt="twitter"></a>
+      <p>Copyright &copy; 2018</p>
+    </footer>
+</body>
+</html>

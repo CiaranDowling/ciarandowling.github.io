@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>History of ITB/Buildings</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
+<style> 
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+</head>
+
+<body>
+	<header>
+      <div class="container">
+        <div id="title">
+          <h1>History of ITB</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="location.html">Location</a></li>
+			<li><a href="ecology.html">Ecology</a></li>
+			<li><a href="buildings.html">Buildings</a></li>  
+			<li><a href="about.html">About ITB</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+	<h1>Buildings</h1>
+	    <div id="flip">Blocks</div>
+<div id="panel">
+	<ul>
+		<li><a href="a block.html">A Block</a></li>
+		<li><a href="b block.html">B Block</a></li>
+		<li><a href="c block.html">C Block</a></li>
+		<li><a href="d block.html">D Block</a></li>
+		<li><a href="e block.html">E Block</a></li>
+		<li><a href="f block.html">F Block</a></li>
+	</ul>
+	</div>
+	<h2>C Block</h2>
+	
+	<section id="boxes1">
+      <div class="container">
+        <div class="box1">
+	<img src="images/c block.jpg" width="500">
+    </div>
+    </section>
+	
+	The C Block is a multipurpose building for canteen, medical centre, Students' Union, chaplains' offices and sports hall
+    <footer>
+		<a href="https://www.facebook.com/itbdublin/"><img src="images/facebook.png" alt="facebook"></a>
+	    <a href="https://twitter.com/ITBdublin"><img src="images/twitter.png" alt="twitter"></a>
+      <p>Copyright &copy; 2018</p>
+    </footer>
+</body>
+</html>
